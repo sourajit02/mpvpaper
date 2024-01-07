@@ -423,9 +423,9 @@ static void set_init_mpv_options(const struct wl_state *state) {
 
     char loaded_configs[50] = "";
 
-    strcpy(config_path+strlen(home_dir), "/.config/mpv/mpv.conf");
-    if (mpv_load_config_file(mpv, config_path) == 0)
-        strcat(loaded_configs, "mpv.conf ");
+    //strcpy(config_path+strlen(home_dir), "/.config/mpv/mpv.conf");
+    //if (mpv_load_config_file(mpv, config_path) == 0)
+    //    strcat(loaded_configs, "mpv.conf ");
     strcpy(config_path+strlen(home_dir), "/.config/mpv/input.conf");
     if (mpv_load_config_file(mpv, config_path) == 0)
         strcat(loaded_configs, "input.conf ");
